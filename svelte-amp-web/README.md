@@ -1,29 +1,33 @@
-How to use Svelte + AMP?
+# How to use Svelte + AMP?
 
-1. Add AMP to your node modules:
-        
+## 1. Add AMP to your node modules:
+
+```
 npm install adaptive-media-player --save-dev
+```
 
+## 2. Import AMP into your svelte component:
 
-2. Import AMP into your svelte component:
-
+```
 <script>
     import  AMP  from  'adaptive-media-player'
 </script>
+```
 
+## 3. Add a container 'div':
 
-3. Add a container 'div':
-
+```
 <script>
     import  AMP  from  'adaptive-media-player'
 </script>
 <main>
     <div id='player' class='player'></div>
 </main>
+```
 
+## 4. Give the player a width using css:
 
-4. Give the player a width using css:
-
+```
 <script>
     import  AMP  from  'adaptive-media-player'
 </script>
@@ -35,9 +39,11 @@ npm install adaptive-media-player --save-dev
         width: 640px;
     }
 </style>
+```
 
+## 5. Call 'AMP.create' passing your API key, the container id and a 'config' object:
 
-5. Call 'AMP.create' passing your API key, the container id and a 'config' object:
+```
 <script>
     import  AMP  from  'adaptive-media-player'
     const config = {
@@ -58,4 +64,4 @@ npm install adaptive-media-player --save-dev
         width: 640px;
     }
 </style>
-            
+```
