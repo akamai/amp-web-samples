@@ -1,0 +1,4 @@
+/svelte-amp-web/node_modules/
+/svelte-amp-web/public/build/
+
+.DS_Store
