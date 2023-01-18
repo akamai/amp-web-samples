@@ -1,4 +1,24 @@
 /svelte-amp-web/node_modules/
 /svelte-amp-web/public/build/
 
+# dependencies
+/react-amp-web/node_modules
+/react-amp-web/.pnp
+.pnp.js
+# testing
+/react-amp-web/coverage
+# production
+/react-amp-web/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 .DS_Store

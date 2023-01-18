@@ -1,0 +1,13 @@
+.ConsoleSample-h3 {
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.ConsoleSample-code {
+    padding: 1em 1em;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: black;
+    color: #00ff00;
+}

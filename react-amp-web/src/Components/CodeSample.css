@@ -1,0 +1,14 @@
+.CodeSample-h3 {
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.CodeSample-code {
+    padding: 1em;
+    text-align: left;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid lightblue;
+    background-color: black;
+    color: lightblue;
+}
