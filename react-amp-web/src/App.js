@@ -22,7 +22,9 @@ function PlayerExample() {
     AMP.create("customerApiKey", "#player", config)
   });
   return (
-    <div id="player"></div>
+    <div className="PlayerExample-container">
+        <div id="player"></div>
+    </div>
   );
 }
 export default PlayerExample;
