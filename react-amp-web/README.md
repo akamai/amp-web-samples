@@ -11,7 +11,7 @@ import React, { useEffect } from 'react';
 import  AMP  from  'adaptive-media-player-test'
 ```
 
-## 3. Call AMP.create in you component passing a config object and a contained id:
+## 3. Call AMP.create in you component passing a config object and a container id:
 ```
 import React, { useEffect } from 'react';
 import AMP from  'adaptive-media-player-test'

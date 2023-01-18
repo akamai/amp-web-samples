@@ -54,7 +54,7 @@ function App() {
         title="2. Import AMP into your react component:"
         script={STEP_1}/>
         <CodeSample
-        title="3. Call AMP.create in you component passing a config object and a contained id:"
+        title="3. Call AMP.create in you component passing a config object and a container id:"
         script={STEP_2}/>
         <CodeSample
         title="4. Set a default size for your player in your css;"
