@@ -7,7 +7,7 @@ import CodeSample from './Components/CodeSample';
 
 const STEP_1 = `
 import React, { useEffect } from 'react';
-import  AMP  from  'adaptive-media-player-test'
+import AMP from 'adaptive-media-player-test'
 `
 
 const STEP_2 = `
