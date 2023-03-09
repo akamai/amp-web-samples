@@ -68,7 +68,7 @@
 				type: &#34;application/x-mpegURL&#34;
 			&#125;
 		&#125;
-		AMP.create(&#34;MY_API_KEY&#34;, &#34;#player&#34;, config)
+		AMP.create(&#34;CUSTOMER_API_KEY&#34;, &#34;#player&#34;, config)
 		"
 		main="
 		&lt;div id='player'&gt;&lt;/div&gt;

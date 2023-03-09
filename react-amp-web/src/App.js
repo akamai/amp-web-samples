@@ -19,7 +19,7 @@ function PlayerExample() {
       autoplay: true,
       media: { src: "https://example.com/video/bbb.mp4" }
     }
-    AMP.create("customerApiKey", "#player", config)
+    AMP.create("CUSTOMER_API_KEY", "#player", config)
   });
   return (
     <div className="PlayerExample-container">
