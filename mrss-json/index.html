@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+<head>
+    <title>AMP Player [amp-web-mrss - MRSS Feed - JSON]</title>
+    <script src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=samples&version=9.1.23"></script>
+    <style>
+        .sample {
+            border-style: none;
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body onload="loadHandler(event)" ontouchstart="">
+<div class="sample">
+    <div id="akamai-media-player"></div>
+</div>
+<script>
+      var amp;
+
+      function loadHandler(event) {
+        var config = {
+          autoplay : true,
+          autoplayPolicy: "muted",
+          plugins: {
+            mrss: {
+              resources: [
+                {src: "resources/js/Mrss.js", type: "text/javascript"}
+              ],
+              url: "resources/feeds/vod-feed.json"
+            }
+          }
+        };
+
+        akamai.amp.AMP.create("akamai-media-player", config, function (event) {
+          amp = event.player;
+        });
+      }
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "AMP Premier",
+			"link" : "http://akamai.com/player.html",
+			"description" : "AMP Premier Player",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "4255636",
+			"media-group" : {
+				"media-content" : [
+						{
+							"@attributes" : {
+								"url" : "https://mdtp-a.akamaihd.net/vod/hls/BLENDER-BUNNY/master.m3u8",
+								"duration" : "108",
+								"medium" : "video",
+								"type" : "application/x-mpegURL"
+							}
+						},
+						{
+							"@attributes" : {
+								"url" : "http://projects.mediadev.edgesuite.net/customers/akamai/video/VfE.mp4",
+								"duration" : "108",
+								"medium" : "video",
+								"type" : "video/mp4"
+							}
+						}],
+				"media-title" : "VOD - HD World",
+				"media-description" : "View world's beauty in HD",
+				"media-scenes": {
+					"media-scene": [
+						{
+							"sceneTitle": "Scene 1",
+							"sceneDescription": "Scene 1 - Description",
+							"sceneStartTime": "00:00:00",
+							"sceneEndTime": "00:00:30"
+						}, {
+							"sceneTitle": "Scene 2",
+							"sceneDescription": "Scene 2 - Description",
+							"sceneStartTime": "00:00:30",
+							"sceneEndTime": "00:01:00"
+						}, {
+							"sceneTitle": "Scene 3",
+							"sceneDescription": "Scene 3 - Description",
+							"sceneStartTime": "00:01:00",
+							"sceneEndTime": "00:01:30"
+						}, {
+							"sceneTitle": "Scene 4",
+							"sceneDescription": "Scene 4 - Description",
+							"sceneStartTime": "00:01:30",
+							"sceneEndTime": "00:01:48"
+						}
+					]
+				},
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-subTitle": {
+					"@attributes": {
+						"type": "text/vtt",
+						"lang": "en",
+						"href": "resources/captioning/captioning-en.vtt"
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "resources/images/hd_world.jpg",
+						"width" : "604",
+						"height" : "341"
+					}
+				}
+			}
+		}
+	}
+}
