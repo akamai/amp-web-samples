@@ -1,0 +1,15 @@
+/*
+---
+name: AMP Player - Playlist sample
+description: Demostrate the AMP Player sample
+authors:
+  - Akamai AMP Player Team
+resources:
+  - /js/empty.js
+  - /css/normalize.css
+normalize_css: yes
+lang_css: SCSS
+...
+*/
+
+<p>Demostrate the AMP Player sample</p> 
