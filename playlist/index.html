@@ -1,0 +1,83 @@
+<html lang="eng">
+<head>
+    <title>AMP Player Test Page - Playlist</title>
+    <script src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=samples&version=9.1.23"></script>
+    <style>
+        .sample {
+            border-style: none;
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body onload="loadHandler(event)" ontouchstart="">
+<div class="sample">
+    <div id="akamai-media-player"></div>
+</div>
+<script>
+    var amp,
+          videos = [{
+            title: "Welcome",
+            source: [{
+              src: "https://welcomevideo.akamaized.net/delivery/1f/07/1f0756a1-f54b-4e22-adbc-8c68680532ea/tom-intro-for-new-customers-v26b238090-d41d-336d-4347-3dac7fc07f0e.m3u8",
+              type: "application/x-mpegURL"
+            }],
+            poster: "/assets/img/space_alone.jpg"
+          },
+          {
+            title: "Big Buck Bunny",
+            source: [{
+              src: "https://mdtp-a.akamaihd.net/customers/akamai/video/VfE.mp4",
+              type: "video/mp4"
+            }],
+            poster: "/assets/img/bunny.jpg"
+          },
+          {
+            title: "OTT Frontline",
+            source: [{
+              src: "https://akamtrans-a.akamaihd.net/delivery/20/35/2035ef57-5cac-4d23-ab88-6366e9c24e6a/value-of-cmaf-in-the-drive-towards-ott-interoperability3d81e38c-2cad-336d-e2ee-4131c52ad3d4.m3u8",
+              type: "application/x-mpegURL"
+            }],
+            poster: "/assets/img/hd_world.jpg"
+          },
+          {
+            title: "AMD HLS",
+            source: [{
+              src: "https://akamtrans-a.akamaihd.net/delivery/94/88/9488592c-0671-49ba-b1c1-d908418a629a/experience-the-edge3d81e38c-2cad-336d-e2ee-4131c52ad3d4.m3u8",
+              type: "application/x-mpegURL"
+            }],
+            poster: "/assets/img/elephant-dreams.jpg"
+          },
+          {
+            title: "BBB HLS",
+            source: [{
+              src: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+              type: "application/x-mpegURL"
+            }],
+            poster: "/assets/img/bunny.jpg"
+          }
+          ];
+        function loadHandler(event) {
+          var config = {
+            plugins: {
+              playlist: {
+                resources: [
+                  { src: "/assets/js/Playlist.js", debug: "/assets/js/Playlist.js", type: "text/javascript" },
+                  { src: "/assets/css/Playlist.css", debug: "/assets/css/Playlist.css", type: "text/css" }],
+                autoadvance: {
+                  enabled: true,
+                  interval: 10
+                }
+              }
+            },
+            autoplay: true,
+            media: videos
+          };
+
+          akamai.amp.AMP.create("#akamai-media-player", config, function (event) {
+            amp = event.player;
+          });
+        }
+</script>
+</body>
+</html>
