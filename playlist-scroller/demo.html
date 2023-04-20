@@ -1,0 +1,33 @@
+<html lang="eng">
+
+<head>
+  <title>AMP Player Test Page - Playlist with scroll list</title>
+  <script src="https://amp.akamaized.net/hosted/1.1/player.esi?apikey=samples&version=9.1.23"></script>
+  <script src="demo.js"></script>
+  <link rel="stylesheet" href="demo.css">
+</head>
+
+<body onload="loadHandler(event)" ontouchstart="">
+  <div class="container">
+    <div class="player">
+      <div class="player__header">
+        AMP Player
+      </div>
+      <div id="akamai-media-player"></div>
+    </div>
+    <div class="playlist">
+      <div class="playlist__header">
+        Playlist
+      </div>
+      <main>
+        <section class="section__orange" id="welcome">Welcome</section>
+        <section class="section__blue"  id="bigbuckbunny">Big Buck Bunny</section>
+        <section class="section__yellow"  id="ottfrontline">OTT Frontline</section>
+        <section class="section__orange"  id="amdhls">AMD HLS</section>
+        <section class="section__blue"  id="bbbhls">BBB HLS</section>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,11 +1,9 @@
 /*
 ---
-name: AMP Player - Playlist sample
+name: Playlist with scroll list
 description: Demostrate the AMP Player sample
 authors:
   - Akamai AMP Player Team
-resources:
-  - amp.js version=9.1.23
 ...
 */
 
