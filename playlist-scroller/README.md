@@ -2,6 +2,14 @@
 
 This tutorial contains:
 
+- [Quick Reference](#quick-reference)
+- [Enabling the playlist plugin](#enabling-the-playlist-plugin)
+- [Configuring the playlist plugin](#configuring-the-playlist-plugin)
+- [Providing a playlist](#providing-a-playlist)
+- [Event `mediachange`](#event-mediachange)
+- [Select the video from the queue](#select-the-video-from-the-queue)
+
+
 ## Quick Reference
 
 The plugin can be used by providing a `playlist` object along an array of media objects in the player config.
